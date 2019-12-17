@@ -16,6 +16,13 @@ Plug 'godlygeek/tabular'
 " autocomplete
 Plug 'ycm-core/YouCompleteMe'
 
+" multiple cursor
+Plug 'terryma/vim-multiple-cursors'
+
+" Rename/Chmod/SudoWrite
+Plug 'tpope/vim-eunuch'
+
+
 " config of packages
 for f in split(glob('~/.config/nvim/+config/*.vim'), '\n')
     exe 'source' f
