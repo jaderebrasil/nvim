@@ -1,0 +1,1 @@
+/home/jader/.config/nvim/plugged/gocode/nvim/ftplugin/go/gocomplete.vim
