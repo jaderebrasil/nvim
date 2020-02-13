@@ -22,6 +22,8 @@ Plug 'terryma/vim-multiple-cursors'
 " Rename/Chmod/SudoWrite
 Plug 'tpope/vim-eunuch'
 
+" Golang
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 " config of packages
 for f in split(glob('~/.config/nvim/+config/*.vim'), '\n')

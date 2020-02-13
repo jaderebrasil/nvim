@@ -175,6 +175,7 @@ let g:session_command_aliases = 1
 syntax on
 set ruler
 set relativenumber
+set number
 
 let no_buffers_menu=1
 silent! colorscheme gruvbox
@@ -349,7 +350,15 @@ nnoremap <leader>sc :CloseSession<CR>
 "" Tabs
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
-nnoremap <silent> <S-t> :tabnew<CR>
+nnoremap <silent> <C-S-t> :tabnew<CR>
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnew<Space>
+nnoremap tm  :tabm<Space>
+nnoremap tq  :tabclose<CR>
 
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
@@ -385,9 +394,9 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 nmap <leader>y :History:<CR>
 
 " snippets
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsExpandTrigger="<C-b>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 " ale

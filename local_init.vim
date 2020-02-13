@@ -1,8 +1,11 @@
 " Map <LocalLeader>
-let maplocalleader = '\\'
+let maplocalleader = ';'
 " shortcuts for Markdown
 nnoremap <Space>tl :Limelight!!<CR>
 nnoremap <Space>tg :Goyo<CR>
+
+" shortcuts for Tabs
+
 
 " my packages
 for f in split(glob('~/.config/nvim/+packages/*.vim'), '\n')

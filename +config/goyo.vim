@@ -4,6 +4,10 @@
 " Defing md as markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
+" Basic goyo options
+let g:goyo_width  = 125
+let g:goyo_height =  95
+
 " Save the current `background` value for reset later
 let s:save_background = ""
 if exists( "&background" )
